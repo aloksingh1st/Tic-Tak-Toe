@@ -1,7 +1,7 @@
 import { StyleSheet, TextInput, Button, Text, View } from "react-native";
 import React, { useState } from "react";
 
-export default function Players() {
+export default function Players({navigation}) {
   const [text, setText] = useState("");
   const [player2, setPlayer2] = useState("");
 
@@ -12,6 +12,7 @@ export default function Players() {
   const handleSubmit = () => {
     // Handle the text input data, e.g., submit it to an API or store it in state
     console.log("Submitted text: ", text, player2);
+    navigation.navigate('game', { text, player2 });
   };
 
   return (

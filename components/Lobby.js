@@ -8,7 +8,6 @@ const App = ({ navigation }) => {
         navigation.navigate('lobby')
       };
 
-
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={handlePress}>
@@ -25,7 +24,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        marginTop: 25,
+        paddingTop: 25,
         height: 816,
         backgroundColor: "#00ffa682",
     },
